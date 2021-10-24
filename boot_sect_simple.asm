@@ -3,7 +3,7 @@ loop:
 	jmp loop
 
 ;; fill with 510 zeroes minus size of previous code
-	times 510-($-$$) db 0
+times 510-($-$$) db 0
 
-	;; magic number
-	dw 0xaa55
+;; magic number
+dw 0xaa55
